@@ -1,0 +1,18 @@
+<div class="document-scroll">
+  <ul>
+    <li *ngFor="let url of documentUrls">
+      <img [src]="url" (click)="compareService.setImage(url)">
+    </li>
+    <div style="clear:both"></div>
+  </ul>
+</div>
+<div class="document-compare row">
+  <ul>
+    <li>
+      <zoom [src]="compareService.documentViewUrls[0]" [width]="'500px'" [height]="'500px'"></zoom>
+    </li>
+    <li>
+      <zoom [src]="compareService.documentViewUrls[1]" [width]="'500px'" [height]="'500px'"></zoom>
+    </li>
+  </ul>
+</div>

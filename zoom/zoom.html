@@ -1,0 +1,14 @@
+<div [style.width]="width"
+    [style.height]="height"
+  style="overflow: scroll; border: 1px solid red;"
+  zoom
+>
+  <!--TODO center image inside div zoom block-->
+  <img src="{{src}}" [style.width]="imageWidth" [style.transform]="imageRotate">
+</div>
+
+<div class="btn btn-default" (click)="zoomin()">+</div>
+<div class="btn btn-default"  (click)="zoomout()">-</div>
+<div class="btn btn-default"  (click)="rotate('-')">Rotate Left</div>
+<div class="btn btn-default"  (click)="rotate('+')">Rotate Right</div>
+<div class="btn btn-default"  (click)="reset()">Reset</div>

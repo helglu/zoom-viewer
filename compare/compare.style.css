@@ -1,0 +1,11 @@
+.document-scroll { overflow:auto; }
+.document-scroll ul{ white-space: nowrap; padding: 0px 4px;}
+.document-scroll li { display: inline-block; }
+.document-scroll img { max-height: 100px; }
+
+li{
+  margin: 0px 4px;
+}
+
+.document-compare { width: 100% }
+.document-compare li { display: inline-block; }
